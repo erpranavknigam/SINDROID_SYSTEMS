@@ -1,0 +1,447 @@
+@import 'utilities.css';
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+}
+
+body{
+	font-family:'Poppins',Arial;
+}
+
+:root{
+	/*--primary:#57f1c9;*/
+	--primary:#221d48;
+	/*--primary:#fe1662;*/
+	/*--secondery:#57fc79;*/
+	--secondery:#070606;
+	/*--dark:#161616;*/
+	--dark:#fe1662;
+	/*--ternary:#898989;*/
+	--ternary:rgb(83, 90, 98);
+
+	--pure:#ffffff;
+	--light:#f2f2f2;
+}
+
+header{
+	min-height:100vh;
+	background:var(--dark);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 75%, 0 100%);
+}
+
+.container{
+	max-width: 1152px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+.container .left a{
+	text-decoration: none;
+	color: var(--pure);
+	margin-right: 2rem;
+}
+
+.container .left a:hover{
+	text-decoration: none;
+	color: var(--primary);
+	margin-right: 2rem;
+	transition: all .3s;
+	border-bottom: 1px groove white;
+}
+
+header nav{
+	padding: 2rem 0;
+}
+
+.logo img{
+	height:2rem;
+	margin-right:16rem;
+}
+
+.LogoBig .left img{
+	width:500px;
+
+}
+
+.LogoBig .right {
+	color: var(--pure);
+}
+
+
+.LogoBig .right ul li{
+	float: left;
+	margin-right: 2rem;
+	margin-left: 1.5rem;
+	font-size: 1rem;
+	color: var(--primary);
+
+}
+::after{
+clear: both;
+}
+
+.LogoBig .right h1{
+	text-transform: uppercase;
+	font-size:3rem;
+	font-weight: 100;
+	font-family:xperia;
+	/*margin: 1rem ;*/
+	
+}
+.LogoBig .right h1 span{
+	font-family: xperia;
+	color: var(--primary);
+	font-size: 30px;
+	margin-bottom:1px;
+	/*line-height: 2rem;*/
+
+}
+.LogoBig .right span.motto{
+	font-family: lato;
+	margin-left:25rem;
+	color: var(--pure);
+	font-size: 10px;
+
+
+}
+
+.LogoBig .right p{
+	line-height: 1.9rem;
+	margin-bottom: 2rem;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+}
+#Products{
+	padding: 6rem 0;
+	height: 100vh;
+}
+
+.imgi{
+	height: 400px;
+	margin-left: 10rem;
+}
+
+#Products h1{
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+#Products h1 span{
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--primary);
+}
+#Products h3{
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+#Products p{
+	color: var(--ternary);
+	font-family:lato;
+	line-height: 1.9rem;
+	word-spacing: 1rem;
+}
+.social{
+	display: flex;
+}
+.social a{
+	background: var(--dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-right: 0.6rem;
+	transition: all .3s ease;
+	margin-top: 0.8rem;
+}
+.social a:hover{
+	background-color: var(--primary);
+}
+.social a img{
+	width: 100%;
+	height:100%;
+	padding: 0.5rem;
+}
+
+section.services{
+	background: var(--light);
+	min-height: 100vh;
+	}
+	
+.our{
+	padding: 1.5rem 0rem;
+	padding-bottom:8rem; 
+}
+.container h1.section-heading{
+	color: var(--secondery);
+	text-align: center;
+	font-size: 3rem;
+	line-height: 0.5;
+	font-family: lato;
+
+}
+.section-heading span{
+	color: var(--primary);
+
+}
+
+section.services .card-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap:6rem;
+	grid-row-gap: 8rem;
+}
+section.services .card-wrapper .card{
+	background: var(--pure);
+	padding: 1rem 1rem;
+	position: relative;
+	padding-top: 3rem;
+	text-align: center;
+	transition: all .3s ease;
+}
+section.services .card-wrapper .card img{
+	position: absolute;
+	top: -5.5rem;
+	left: 50%;
+	transform: translate(-50%);
+	height:8rem;
+	width:8rem;
+}
+section.services .card-wrapper .card h2{
+	font-weight: bolder;
+	font-size: 0.8rem;
+	text-align: left;
+
+}
+section.services .card-wrapper .card h3{
+	font-weight: bold;
+	font-size: 0.6rem;
+	text-align: left;
+	padding-bottom:0.5rem;
+	color: var(--dark);
+
+}
+section.services .card-wrapper .card p{
+	font-family:lato;
+	color: var(--ternary);
+	line-height: 1.5.;
+	text-align:left;
+	font-size:0.6rem;
+}
+section.services .card-wrapper .card:hover{
+	background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p,
+section.services .card-wrapper .card:hover h3{
+	color:var(--pure);
+}
+.LogoDiv{
+	background-color:#fe1662;
+	/*border-radius: 20px 50px;*/
+}
+
+#product-row-1 {
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+}
+
+#product-row-2 {
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+}
+
+#product-row-3 {
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+}
+
+footer {
+    background-color: #FE1662;
+}
+#foot {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    position: relative;
+}
+
+#sec1{
+    float: left;
+    width: 25%;
+    margin-left: 30px;
+}
+#sec2{
+    float: left;
+    width: 25%;
+    margin-left: 18%;
+    
+}
+#sec3 {
+    float: right;
+    margin-right: 10px;
+}
+
+.headOfFoot{
+    margin-right: 50px;
+    font-weight: bolder;
+    
+    font-family: 'Xperia';
+    color: #FE1662;
+}
+
+.paraOfFoot a img {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.paraOfFoot a{
+    text-decoration: none;
+    color: Black;
+    text-decoration-line: none;
+}
+.subscribe {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    background-color: #fe1662;
+    margin-top: 20%;
+}
+.subscribe h6{
+    font: 30px bolder;
+    font-family: fantasy;
+    color: white;
+}
+.input {
+    width: 30%;
+    height: 38px;
+    border: 2px solid white;
+    border-radius: 20px 20px 20px 20px;
+}
+.submit{
+    position: relative;
+    margin-left: -108px;
+    
+    background-color: #fe1662;
+    height: 32px;
+    width:98px;
+    border-radius: 20px 20px 20px 20px; 
+    color: white;
+    font-weight: bolder;
+    border-top:2px white; 
+    border-bottom: 2px white;
+    border: inherit;
+    
+}
+.submit:hover{
+    cursor: pointer;
+    opacity:0.9;
+}
+.copyright{
+    float: right;
+    color: white;
+    background-color: #fe1662;
+    width: 100%;
+    
+}
+.copyright p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+.product-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: lato;
+    line-height: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+    .subscribe {
+        margin-top: 50%;
+    }
+    .input {
+        width: 60%;
+    }
+    
+    #foot {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+#sec1{
+    float: left;
+    width: 25%;
+    margin-left: 30px;
+}
+#sec2{
+    float: left;
+    width: 25%;
+    margin-left: 12%;
+    
+}
+#sec3 {
+    float: right;
+    margin-right: 10px;
+}
+
+.headOfFoot{
+    margin-right: 50px;
+    font-weight: bolder;
+    
+    font-family: 'Xperia';
+    color: #FE1662;
+}
+
+.paraOfFoot a img {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.paraOfFoot a{
+    text-decoration: none;
+    color: Black;
+    text-decoration-line: none;
+}
+    #Products {
+        width: auto;
+        
+    }
+    #product-row-1 {
+        margin-left: -40px;
+        width: auto;
+        
+    }
+    #product-row-2 {
+        margin-left: -40px;
+    width: auto;
+    }
+#product-row-3 {
+        margin-left: -40px;
+    width: auto;
+    }
+    
+}
+
+
+
+

@@ -1,0 +1,52 @@
+.flex{
+	display: flex;
+}
+
+.items-center{
+	align-items:center;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.btn{
+	padding: 0.3rem 3rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border:2px solid transparent;
+	outline: none;
+	cursor: pointer;
+  /*border-radius: 100px 100px 0px 0px;*/
+}
+.btn-primary{
+	background:var(--primary);
+	/*color: var(--secondery);*/
+	color: var(--pure);
+
+}
+.btn-primary:hover{
+	background:transparent ;
+	border-color:var(--primary);
+	color: var(--primary);
+	transition: all .3s ease;
+  /*border-radius: 10px 10px 0px 0px;*/
+}
+
+.btn-secondery{
+	background:transparent;
+	color: var(--primary);
+	border-color: var(--primary);
+
+}
+.btn-secondery:hover{
+	background:var(--primary);
+	color:var(--pure);
+	border-color: var(--primary);
+
+}
+.flex-1{
+	flex: 1;
+}
+
+.justify-center{
+	justify-content: center;
+}
